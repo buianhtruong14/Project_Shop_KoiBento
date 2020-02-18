@@ -1,0 +1,161 @@
+.content-top {
+  background-image: url("img/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .content-top h1 {
+    color: #fff;
+    font-size: 48px;
+    padding: 50px 0px; }
+  .content-top p {
+    padding: 50px 0px; }
+    .content-top p span {
+      color: #e7272d;
+      font-size: 14px; }
+    .content-top p a {
+      color: #fff; }
+
+.content-bottom .new-header {
+  margin-bottom: 60px; }
+  .content-bottom .new-header .img-content {
+    width: 100%; }
+    .content-bottom .new-header .img-content img {
+      width: 100%;
+      height: auto; }
+  .content-bottom .new-header .text-content {
+    border-bottom: 1px solid #646464; }
+    .content-bottom .new-header .text-content h2 {
+      padding-top: 30px; }
+      .content-bottom .new-header .text-content h2 a {
+        color: #000;
+        font-size: 30px; }
+      .content-bottom .new-header .text-content h2 a:hover {
+        text-decoration: none; }
+    .content-bottom .new-header .text-content .nav-content {
+      position: relative;
+      margin-top: 20px;
+      margin-bottom: 40px; }
+      .content-bottom .new-header .text-content .nav-content li {
+        padding: 0px 20px;
+        border-right: 1px solid #aaa; }
+        .content-bottom .new-header .text-content .nav-content li span a {
+          color: #e7272d; }
+      .content-bottom .new-header .text-content .nav-content li:first-child {
+        padding-left: 0px !important; }
+    .content-bottom .new-header .text-content .nav-content:after {
+      content: "";
+      position: absolute;
+      height: 4px;
+      width: 44px;
+      background: #e7272d;
+      bottom: -18px;
+      z-index: 30; }
+    .content-bottom .new-header .text-content p {
+      font-size: 14px;
+      color: #646464;
+      margin-bottom: 24px;
+      font-family: 'Roboto Slab', serif;
+      width: 100%;
+      margin-bottom: 50px; }
+    .content-bottom .new-header .text-content img {
+      max-width: 100%;
+      height: auto; }
+    .content-bottom .new-header .text-content a {
+      margin-bottom: 50px; }
+.content-bottom .comment h3 {
+  color: #000;
+  font-size: 30px;
+  position: relative;
+  margin-bottom: 50px; }
+.content-bottom .comment p {
+  font-size: 14px;
+  color: #646464;
+  margin-bottom: 24px;
+  font-family: 'Roboto Slab', serif;
+  width: 100%;
+  margin-bottom: 50px; }
+.content-bottom .comment textarea {
+  margin-bottom: 40px; }
+.content-bottom .comment input {
+  margin-bottom: 40px; }
+.content-bottom .comment button {
+  margin-bottom: 70px; }
+
+.sider-bar-header {
+  margin-bottom: 40px; }
+  .sider-bar-header h3 {
+    color: #000;
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 50px; }
+  .sider-bar-header h3:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 44px;
+    background: #e7272d;
+    bottom: -18px;
+    z-index: 30;
+    left: 0; }
+  .sider-bar-header .search {
+    border: 1px solid #e7272d;
+    width: 70%; }
+    .sider-bar-header .search input {
+      padding: 6px 12px;
+      border-style: none; }
+    .sider-bar-header .search button {
+      background: none;
+      border: none;
+      color: #e7272d; }
+
+.sider-bar-center h3 {
+  color: #000;
+  font-size: 30px;
+  position: relative;
+  margin-bottom: 50px; }
+.sider-bar-center h3:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 44px;
+  background: #e7272d;
+  bottom: -18px;
+  z-index: 30;
+  left: 0; }
+.sider-bar-center p span {
+  color: #e7272d; }
+.sider-bar-center p a {
+  color: #646464;
+  font-size: 14px;
+  font-family: 'Roboto Slab', serif; }
+
+.sider-bar-footer {
+  width: 75%; }
+  .sider-bar-footer h3 {
+    color: #000;
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 50px; }
+  .sider-bar-footer h3:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 44px;
+    background: #e7272d;
+    bottom: -18px;
+    z-index: 30;
+    left: 0; }
+  .sider-bar-footer a {
+    padding: 5px 20px;
+    margin: 0px 5px 7px 0px;
+    border: 1px solid #646464;
+    color: #646464;
+    font-size: 14px;
+    font-family: 'Roboto Slab', serif; }
+  .sider-bar-footer a:hover {
+    background-color: #e7272d;
+    color: #fff;
+    border-style: 1px solid #fff;
+    transition: 0.6s; }
+
+/*# sourceMappingURL=style.css.map */

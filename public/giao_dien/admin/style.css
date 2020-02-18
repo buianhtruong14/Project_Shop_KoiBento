@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  display: flex;
+  justify-content: space-between; }
+  .header .logo h1 a {
+    color: #495057; }
+  .header .logo h1 a:hover {
+    text-decoration: none !important; }
+  .header .nav-menu {
+    position: relative; }
+    .header .nav-menu li a {
+      color: #aaa; }
+      .header .nav-menu li a img {
+        width: 30px;
+        height: auto;
+        border-radius: 50%; }
+    .header .nav-menu li .form-header input {
+      width: 80%;
+      border-style: none;
+      border-bottom: 1px solid #000;
+      display: none; }
+    .header .nav-menu li .form-header button {
+      width: 15%; }
+
+.content-admin {
+  margin-top: 20px; }
+  .content-admin .nav-menu li {
+    list-style-type: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+    border-bottom: 1px solid #000; }
+    .content-admin .nav-menu li a {
+      color: #606060;
+      padding: 30px 0px; }
+      .content-admin .nav-menu li a i {
+        margin-right: 50px; }
+    .content-admin .nav-menu li .ui {
+      color: #000 !important;
+      font-size: 24px; }
+    .content-admin .nav-menu li .icon {
+      color: #000 !important;
+      font-size: 24px; }
+  .content-admin .nav-menu li:hover {
+    background-color: whitesmoke; }
+  .content-admin .content-right {
+    background-color: #dfdfdf; }
+    .content-admin .content-right .content-menu {
+      padding: 12px 8px;
+      background-color: #fff;
+      margin-top: 20px; }
+      .content-admin .content-right .content-menu h3 {
+        display: flex; }
+        .content-admin .content-right .content-menu h3 i {
+          margin-bottom: 10px;
+          margin-right: 30px; }
+        .content-admin .content-right .content-menu h3 p {
+          font-size: 16px;
+          color: #aaa;
+          font-weight: 200; }
+    .content-admin .content-right .menu1 h3 i {
+      color: green; }
+    .content-admin .content-right .menu2 h3 i {
+      color: purple; }
+    .content-admin .content-right .menu3 h3 i {
+      color: blue; }
+    .content-admin .content-right .menu4 h3 i {
+      color: rosybrown; }
+  .content-admin .content-center {
+    background-color: #fff;
+    width: 100%;
+    margin-top: 60px;
+    margin-left: 5px;
+    margin-right: 5px; }
+  .content-admin .chat {
+    background: #fff;
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px; }
+    .content-admin .chat .message {
+      width: 100%;
+      height: 300px; }
+    .content-admin .chat button {
+      background: #03a9f3;
+      color: #fff;
+      font-size: 28px;
+      border-radius: 7px;
+      padding: 0;
+      text-align: center;
+      height: 40px;
+      width: 40px;
+      border: none; }
+    .content-admin .chat input {
+      border: 1px solid #eceff1;
+      height: 40px;
+      line-height: 40px;
+      font-size: 14px;
+      border-radius: 7px; }
+
+/*# sourceMappingURL=style.css.map */

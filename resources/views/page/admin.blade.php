@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="giao_dien/admin/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <h1><a href="#">ADMIN</a></h1>
+                </div>
+
+                <ul class="nav nav-menu">
+                    <li class="nav-item">
+                        <form action="" method="">
+                            <div class="form-group form-header">
+                                <label for="search"></label>
+                                <input type="search" id="search" name="search" placeholder="Search..">
+                                <button class="btn" id="button-search"><i class="fa fa-search"></i></button>
+                            </div>
+
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fa fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fa fa-envelope"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link btn  dropdown-toggle" data-toggle="dropdown"><img
+                                src="giao_dien/admin/img/76640097_1423817791115383_5082001387064131584_o.jpg" alt="Admin"></a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">My Profile</a>
+                            <a href="#" class="dropdown-item"><i class="fas fa-power-off"></i>Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="content-admin">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col">
+                    <ul class=" nav-menu">
+                        <li><a href="#"><i class=" fa fa-laptop"></i>
+                                Dashbroad</a></li>
+                        <li><a href="#" class="ui">UI ELEMENT</a></li>
+                        <li><a href="#"><i class=" fa fa-cogs"></i>Component</a></li>
+                        <li><a href="#"><i class=" fa fa-table"></i>Table</a></li>
+                        <li><a href="#"><i class=" fa fa-th"></i>Forms</a></li>
+                        <li><a href="#" class="icon">ICONS</a></li>
+                        <li><a href="#"><i class=" fa fa-tasks"></i>Icons</a></li>
+                        <li><a href="#"><i class="far fa-envelope"></i>Email</a></li>
+                        <li><a href="#"><i class=" fa fa-bar-chart"></i>Charts</a></li>
+                        <li><a href="#"><i class=" fa fa-area-chart"></i>Maps</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="col-xl-9 col-md-12 col-12 content-right">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-12 col-12">
+
+                            <div class="content-menu menu1">
+
+                                <h3> <i class="fas fa-money-bill-wave"></i><p> Revenue</p>
+                                   </h3>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-12 col-12">
+                            <div class="content-menu menu2">
+
+                                <h3> <i class="fas fa-shopping-cart"></i><p>Sales</p>
+                                    </h3>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-12 col-12">
+                            <div class="content-menu menu3">
+
+                                <h3><i class="fas fa-window-maximize"></i><p>Templates</p>
+                                    </h3>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-12 col-12">
+                            <div class="content-menu menu4">
+
+                                <h3><i class="fas fa-window-maximize"></i><p> Clients</p>
+                                   </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="content-center"><canvas id="myChart"></canvas></div>
+                    </div>
+                    <div class="row">
+                        <div class="chat">
+                            <h3>LIVE CHART</h3>
+                            <div class="message"></div>
+                            <form action="" method="">
+                                <div class="form-group">
+                                    <input type="text" name="message">
+                                    <button type="button"><i class="fab fa-telegram-plane"></i>
+                                      </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/ead959d8f3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/chart.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#button-search").click(function () {
+                $("#search").style.display = "inline";
+            })
+            $("#button-search").click(function () {
+                $("#search").fadeOut(500)
+            })
+        })
+    </script>
+     <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'bar',
+
+            // The data for our dataset
+            data: {
+                labels: ['Trung', 'V.Anh', 'Tuấn', 'Tiến', 'Long', 'Duy', 'Đạt'],
+                datasets: [{
+                    label: 'Độ Dài Của Súng',
+                    backgroundColor: [
+                        'rgb(25,25, 25)',
+
+                        'rgb(75,75, 75)',
+
+                        'rgb(75,75, 75)',
+                        'rgb(75,75, 75)',
+                        'rgb(75,75, 75)',
+                        'rgb(75,75, 75)',
+                        'rgb(75,75, 75)',
+                    ],
+
+                    borderColor: 'none',
+                    data: [0, -20, 5, 2, 20, 80, 45]
+                }]
+            },
+
+            // Configuration options go here
+            options: {}
+        });
+    </script>
+</body>
+
+</html>

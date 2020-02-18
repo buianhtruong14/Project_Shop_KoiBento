@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cơm hộp Bento – điểm thú vị trong văn hóa ẩm thực Nhật Bản</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-flult">
+            <div class="row">
+                <div class="col-xl-12 infor">
+                    <ul class="nav infor-nav">
+                        <li class="nav-item info-item">
+                            <a class="nav-link info-link" href="#">
+                                <span class="page-item"> <i class="fa fa-map-marker" aria-hidden="true"></i> Trung
+                                    tâm
+                                    Thương Mại Dịch vụ, Cổng 1B, khu VL1, Nam Từ Liêm</span>
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item info-item">
+                            <a class="nav-link info-link" href="#" data-toggle="tooltip" title="Vietnamese!">
+                                <img src="img/1.png" class="lang">
+                            </a>
+                            <a class="nav-link info-link" href="#" data-toggle="tooltip" title="English!">
+                                <img src="img/2.png" class="lang">
+                            </a>
+                            <a class="nav-link info-link" href="#">
+                                <span class="page-item"> <i class="fa fa-phone" aria-hidden="true"></i>+84(0) 974
+                                    704
+                                    288</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row menu-header">
+                <ul class="col-xl-5 col-md-5 nav menu1">
+                    <li class=" nav-item">
+                        <a class=" nav-link active" href="#">trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">combo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chef/index.html">đầu bếp</a>
+                    </li>
+                </ul>
+                <div class="col-xl-2 col-md-2 menu2">
+                    <a class="logo" href="#"><img src="img/logo.png"></a>
+                </div>
+                <ul class="col-xl-5 col-md-5 nav menu1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">về koi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">liên hệ</a>
+                    </li>
+                    <div id="app" class="menu-search">
+                        <div class="search">
+
+                            <form action=" " method="GET" class="form-search">
+                                <input type="search" placeholder="Search Here..." class="search-text" id="search"
+                                    :class=" {active: isActive}">
+                                <a class="fa fa-search" aria-hidden="true" @click="myFunction()"></a>
+                            </form>
+                        </div>
+                        <a href="#" class="cart" data-toggle="tooltip" title="Chưa có sản phẩm nào trong giỏ hàng">
+
+                            <span class="circle" v-on:click="counter+=1">0 <i class="fa fa-shopping-cart"
+                                    aria-hidden="true"></i></span>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+            <div class="res">
+                <nav class="navbar navbar-expand-md  nav-bg">
+                    <button class="navbar-toggler nav-bg-button" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse nav-menu" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="item">
+
+                                <form action="" method="">
+                                    <div class="form-group">
+                                        <label for="search"></label>
+                                        <div class="form-search">
+                                            <input type="search" id="search" placeholder="search...">
+                                            <button type="submit"><i class="fa fa-search"
+                                                    aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </li>
+                            <li class=" nav-item">
+                                <a class=" nav-link active" href="#">trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">combo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="chef/index.html">đầu bếp</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">về koi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">tin tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="icon">
+                    <a href="#" data-toggle="tooltip" title="Thêm giỏ hàng">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </header>
+    <div class="content-top">
+        <div class="container">
+            <h1>CHUYÊN MỤC :TIN TỨC</h1>
+            <p><a href="../index.html">KOI BENTO - Nhà hàng Nhật>Tin TỨC></a><span>Cơm hộp Bento – điểm thú vị
+                    trong văn hóa ẩm thực Nhật Bản</span></p>
+        </div>
+    </div>
+    <div class="content-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-md-8 col-12">
+                    <div class="new-header">
+                        <div class="img-content">
+                            <img src="img/saba-377x251.png" alt="img">
+                        </div>
+                        <div class="text-content">
+                            <h2> <a href="#">
+                                    Cơm hộp Bento – điểm thú vị
+                                    trong văn hóa ẩm thực Nhật Bản</a>
+                            </h2>
+                            <ul class="nav nav-content">
+                                <li class="nav-item ">Post By<span> <a href="#">Koi</a></span></li>
+                                <li class="nav-item">Comment<span> (0)</li>
+                                <li class="nav-item">Tag:<span> <a href="#" target="_self">bento, com nhat, cơm
+                                            trưa, KOI bento, Nhật Bản, văn hóa ẩm thực nhật bản</a></span>
+                                </li>
+                            </ul>
+                            <p>Nhắc tới Nhật Bản, ai ai cũng nghĩ tới sự cần cù, tỉ mỉ và cầu kỳ. Ẩm thực cũng không nằm
+                                ngoài những đặc điểm đó. Đặc biệt, ẩm thực Nhật nổi tiếng khắp thế giới bởi những món ăn
+                                không chỉ ngon mà còn phải đẹp. Đó cũng là lý do Nhật Bản là một trong số ít những nền
+                                ẩm thực được UNESCO công nhận là văn hóa phi vật thể của nhân loại. </p>
+
+                            <img src="img/saba-377x251.png" alt="img">
+                            <p>"Những năm gần đây, văn hóa Bento Nhật Bản ngày càng phổ biến trên thế giới. Trong tiếng
+                                Nhật, bento nghĩa là cơm hộp. Thông thường, người Nhật ăn bento tương tự như một món đồ
+                                ăn nhanh khi đi làm, hay đi học. Nhưng điểm đặc biệt đó là bento của người Nhật vẫn luôn
+                                được trang trí đẹp mắt, tỷ lệ đồ ăn hài hòa và giữ được sự tươi ngon của món ăn.</p>
+                            <img src="img/resize-1024x683.jpg" alt="koi">
+                            <p>Nhìn những hộp bento có dáng vẻ rất hiện đại nhưng hóa ra nó đã được ra đời tại Nhật Bản
+                                từ những năm 1300. Ban đầu, chỉ những người đi săn mới chuẩn bị bento cho bữa trưa để
+                                tiện làm việc khi đi rừng. Nhưng sau đó, bento ngày càng phát triển cầu kỳ hơn và được
+                                giới quý tộc ưa chuộng cho những buổi đi săn hay dã ngoại.</p>
+
+                            <p>Cùng với nhịp sống hiện đại, hình dáng của những suất bento ngày càng được trang trí đẹp
+                                mắt hơn. Tại Nhật, bên cạnh những hộp cơm truyền thống, bento xuất hiện với những hình
+                                dạng xinh xắn và đa dạng hơn. Nhiều người thường biết tới hai loại phổ biến là:</p>
+                            <ul>
+                                <li><strong>Kyaraben:</strong> cơm hộp với hình thú ngộ nghĩnh, đáng yêu như Doreamon,
+                                    Pikachu…</li>
+                                <li><strong>Oekakiben: </strong>cơm hộp với hình ảnh trang trí tỉ mỉ, cầu kỳ, tạo hình
+                                    thành bức tranh phong cảnh</li>
+                            </ul>
+                            <img src="img/Shrimp-Eggs-giam-size.png" alt="koi">
+                            <p>Giữa những buổi trưa vội vã, bento là một điểm nhấn vừa giản dị vừa tràn ngập yêu thương
+                                của người đầu bếp.</p>
+                            <p>KOI Bento xuất phát từ văn hóa Nhật với những nét ẩm thực của tình yêu thương. Những suất
+                                KOI mang tình cảm, sự tỉ mỉ của người đầu bếp, niềm hy vọng về cuộc sống mới của những
+                                thanh niên có hoàn cảnh khó khăn tại REACH và mong muốn phục vụ thực khách với chất
+                                lượng tốt nhất.</p>
+                            <p>KOI Bento – văn hóa bento chuẩn Nhật!</p>
+                            <a href="../index.html" class="btn btn-outline-danger">Tin Tức</a>
+
+
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <h3>Trả Lời</h3>
+                        <p>Email của bạn sẽ không được hiển thị công khai. Các trường bắt buộc được đánh dấu *</p>
+                        <form action="" method="">
+                            <div class="input-group ">
+                                <!-- <div class="input-group-prepend">
+                                  <span class="input-group-text">@</span>
+                                </div> -->
+                                <textarea type="text" class="form-control" placeholder="Comment*"></textarea>
+                            </div>
+                            <div class="form-row ">
+                                <div class="col ">
+
+                                    <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
+                                </div>
+                                <div class="col ">
+                                    <input type="emaiil" class="form-control" placeholder="Email*" name="email">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-outline-danger">Phản Hồi</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 col-12">
+                    <div class="sider-bar-header">
+                        <h3>
+                            TÌM KIẾM
+                        </h3>
+                        <form action="" method="">
+                            <div class="search">
+                                <input type="text" name="search" placeholder="Tìm kiếm...">
+                                <button type="button"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="sider-bar-center">
+                        <h3>DANH MỤC</h3>
+                        <p><span>></span><a href="#" target="_self">TIN TỨC</a></p>
+                    </div>
+                    <div class="sider-bar-footer">
+                        <h3>TAGS ClOULD</h3>
+                        <a href="index.html" class="btn">bento</a>
+                        <a href="#" class="btn">bento Nhật Bản</a>
+                        <a href="index.html" class="btn">Cơm Nhật</a>
+                        <a href="#" class="btn">Cơm</a>
+                        <a href="index.html" class="btn">Cơm Trưa</a>
+                        <a href="../index.html
+                        " class="btn">Doanh Nghiệp Xã Hội</a>
+                        <a href="../index.html" class="btn" target="">KOI BENTO</a>
+                        <a href="../index.html" class="btn">Món Nhật</a>
+                        <a href="#" class="btn">NHẬT BẢN</a>
+                        <a href="../index.html" class="btn">nấu ăn</a>
+                        <a href="../index.html" class="btn">REACH</a>
+                        <a href="index.html" class="btn">Văn Hóa Ẩm Thực</a>
+                        <a href="#" class="btn">Ăn trưa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row ">
+                <div class="col-xl-3 col-md-6 col-12">
+                    <h3>About Food Coner</h3>
+                    <p class="text-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        pellentesque
+                        elit sit amet lorem fermentum.
+                        <span>Nullam turpis ipsum, dapibus eu congue sit amet.</span>
+                    </p>
+                    <h5>Get In Touch</h5>
+                    <div class="menu-footer">
+                        <ul class="nav nav-menu">
+                            <li class="nav-item item"><span class="fab fa-facebook-f link1"></span></li>
+                            <li class="nav-item item"><span class="fab fa-twitter link2"></span></li>
+                            <li class="nav-item item"><span class="fa fa-rss link3"></span></li>
+                            <li class="nav-item item"><span class="fab fa-vk link4"></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12">
+                    <h3>Twiter Posts</h3>
+                    <ul>
+                        <li class="text">
+                            Ut aut reiciendis voluptatibus maiores
+                            <a href="#">http://lkj.ewr.com</a>
+                            alias, ut aut reiciendis.
+
+                            <span>
+                                <i class="fab fa-twitter"></i>
+                                02 days ago
+                            </span>
+                        </li>
+                        <li class="text">
+                            Itaque earum rerum hic tenetur a sapiente delectus
+                            <a href="#">http://uiubajaj.com</a>
+                            ut aut
+                            voluptatibus.
+                            <span>
+                                <i class="fab fa-twitter"></i>
+                                03 days ago
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-12">
+                    <h3>Popular Items</h3>
+                    <img src="img/saba-377x251.png" style="width:255px" alt=" cá basa" class="img-footer">
+                </div>
+                <div class="col-xl-3 col-sm-6 col-12">
+                    <h3>Newsletter</h3>
+                    <p>Sed pellentesque elit sit amet lorem fermentum, vitae maximus tortor accumsan.
+                    </p>
+                    <form action="" method="">
+                        <input type="text" name="email" placeholder="EMAIL" class="form-control input">
+                        <button type="submit" class="btn btn-footer">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer">
+        <p><a href="#">@KOIBENTO</a></p>
+    </div>
+    <script src="https://kit.fontawesome.com/ead959d8f3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</body>
+
+</html>

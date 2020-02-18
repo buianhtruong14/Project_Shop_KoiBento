@@ -1,0 +1,190 @@
+header{
+    position: static;
+    border-bottom: 1px solid rgb(207, 56, 94);
+    .infor{
+        background:#000;
+        .infor-nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .info-item{
+                padding: 12px 0px;
+                display: flex;
+            align-items: center;
+            justify-content: space-between;
+                .info-link{
+                    color:#fff;
+
+                    .lang{
+                        margin-right:20px;
+                    }
+                }
+            .info-link span:hover{
+                    color:rgb(207, 56, 94);
+                }
+            }
+
+
+        }
+        }
+        .menu1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .nav-item{
+                padding-top:40px ;
+                padding-bottom:40px ;
+            }
+
+                .nav-link{
+                    color:#000;
+                    margin:0 15px;
+                    text-transform:uppercase;
+                    font-weight: 600;
+                    font-size:18px;
+                    box-sizing: border-box;
+                    overflow: hidden;
+                    border-style: none;
+                }
+                .nav-link:hover{
+                    color:#e7272d;
+                    border: 1px solid #e7272d;
+                    transition-duration: 0.5s;
+
+                }
+            }
+            .menu-search{
+                display: flex;
+                .search-text{
+                display: none;
+
+                    outline: none !important;
+                    border-bottom: 1.5px solid #e7272d !important;
+                    border-style: none;
+                }
+                .search-text::placeholder{
+                    color:#e7272d;
+                }
+                .active{
+                    display: inline-block;
+                }
+
+                .cart{
+                    border-style:none;
+                    background:#fff;
+                    margin:0 5px;
+                        color:#000;
+                }
+                .cart:hover{
+                    text-decoration: none !important;
+                }
+
+                .circle{
+                    background:#e7272d;
+                    color:#fff;
+                    border-radius: 50%;
+                    padding:5px;
+                }
+            }
+
+        .menu2{
+            text-align: center;
+            padding: 16px 0px;
+        }
+        .menu3{
+            display:none;
+        }
+        .res{
+            display: flex;
+            justify-content: space-between;
+            display: none;
+            border-bottom: 1.5px solid #e7272d !important;
+           .nav-bg{
+               background: #eee; 
+               position: relative;
+               .nav-bg-button {
+                   color:#e7272d !important;
+                   border-color: 1px solid #e7272d;
+                   outline: none !important;
+               }
+              .nav-menu{
+                  background: #eee;
+                //   position: absolute;
+                //   right:0;
+                //   top:0;
+                //   left:0;
+                //   bottom:0;
+                li{
+                    margin-bottom: 10px;
+                    a{
+                        padding: 14px;
+                        border: 1px solid #e7272d;
+                        border-radius: 8px;
+                        color:#e7272d;
+                        text-transform: uppercase;
+                    }
+                    a:hover{
+                        background: #e7272d;
+                        color:#fff;
+                        transition: 0.75s;
+                        border-style:none
+                    }
+                }
+              }
+           }
+            .form-search{
+                position: relative;
+                border:1px solid #e7272d;
+                margin: 0 auto;
+                
+                input{
+                    background: none;
+                    border-style:none;
+                    
+                    outline: none !important;
+                   
+
+                }
+                button{
+                    background: none;
+                    border-style:none;
+                    position: absolute;
+                    right:0;
+                  
+                }
+            }
+            .icon{
+                text-align: center;
+                color:#e7272d;
+                margin-top:27px;
+            }
+        }
+        @media screen and (max-width:767px) {
+            .res{
+                display: block;
+                display: flex;
+
+            }
+            .menu1{
+                display: none; 
+            }
+            .menu2{
+                display: none; 
+            }
+
+        }
+        @media screen  and (max-width:575px){
+            .res{
+                display: block;
+                display: flex;
+
+            }
+            .menu1{
+                display: none; 
+            }
+            .menu2{
+                display: none; 
+            }
+        }
+
+    }

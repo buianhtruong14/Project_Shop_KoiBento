@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myChart"></canvas>
+    <script src="js/chart.min.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'bar',
+
+            // The data for our dataset
+            data: {
+                labels: ['Trung', 'V.Anh', 'Tuấn', 'Tiến', 'Long', 'Duy', 'Đạt'],
+                datasets: [{
+                    label: 'Độ Dài Của Súng',
+                    backgroundColor: [
+                        'rgb(25,25, 25)',
+
+                        'rgb(75,75, 75)',
+
+                        'rgb(125,125, 125)',
+                        'rgb(165,165, 165)',
+                        'rgb(190,190, 190)',
+                        'rgb(220,220, 220)',
+                        'rgb(230,230, 230)',
+                    ],
+
+                    borderColor: 'none',
+                    data: [0, -10, 5, 2, 20, 80, 45]
+                }]
+            },
+
+            // Configuration options go here
+            options: {}
+        });
+    </script>
+</body>
+
+</html>

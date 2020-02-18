@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Koibento</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <!--start header-->
+        <header>
+            <div class="container-flult">
+                <div class="row information">
+                    <div class="col-xl-12 infor">
+                        <ul class="nav infor-nav">
+                            <li class="nav-item info-item">
+                                <a class="nav-link info-link" href="#">
+                                    <span class="page-item"> <i class="fa fa-map-marker" aria-hidden="true"></i> Trung
+                                        tâm
+                                        Thương Mại Dịch vụ, Cổng 1B, khu VL1, Nam Từ Liêm</span>
+                                </a>
+                            </li>
+                            <li class="nav-item info-item">
+                                <a class="nav-link info-link" href="#" data-toggle="tooltip" title="Vietnamese!">
+                                    <img src="../img/1.png" class="lang">
+                                </a>
+                                <a class="nav-link info-link" href="#" data-toggle="tooltip" title="English!">
+                                    <img src="../img/2.png" class="lang">
+                                </a>
+                                <a class="nav-link info-link" href="#">
+                                    <span class="page-item"> <i class="fa fa-phone" aria-hidden="true"></i>+84(0) 974
+                                        704
+                                        288</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="head-menu">
+                    <div class="row ">
+                        <ul class="col-xl-5 col-md-5 nav menu1">
+                            <li class=" nav-item">
+                                <a class=" nav-link active" href="#">trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">combo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">đầu bếp</a>
+                            </li>
+                        </ul>
+                        <div class="col-xl-2 col-md-2 menu2">
+                            <a class="logo" href="#"><img src="../img/logo.png"></a>
+                        </div>
+                        <ul class="col-xl-5 col-md-5 nav menu1">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">về koi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">tin tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">liên hệ</a>
+                            </li>
+                            <div id="app" class="menu-search">
+                                <div class="search">
+
+                                    <form action=" " method="GET" class="form-search">
+                                        <input type="search" placeholder="Search Here..." class="search-text"
+                                            id="search" :class=" {active: nav}">
+                                        <a class="fa fa-search" aria-hidden="true" @click="myFunction()"></a>
+                                    </form>
+                                </div>
+                                <a href="#" class="cart" data-toggle="tooltip"
+                                    title="Chưa có sản phẩm nào trong giỏ hàng">
+
+                                    <span class="circle" v-on:click="counter+=1">0 <i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="res">
+                    <nav class="navbar navbar-expand-md  nav-bg">
+                        <button class="navbar-toggler nav-bg-button" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse nav-menu" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="item">
+
+                                    <form action="" method="">
+                                        <div class="form-group">
+                                            <label for="search"></label>
+                                            <div class="form-search">
+                                                <input type="search" id="search" placeholder="search...">
+                                                <button type="submit"><i class="fa fa-search"
+                                                        aria-hidden="true"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </li>
+                                <li class=" nav-item">
+                                    <a class=" nav-link active" href="#">trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">combo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">đầu bếp</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">về koi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">liên hệ</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link info-link" href="#" data-toggle="tooltip" title="Vietnamese!">
+                                        <img src="img/1.png" class="lang">
+                                    </a>
+                                    <a class="nav-link info-link" href="#" data-toggle="tooltip" title="English!">
+                                        <img src="img/2.png" class="lang">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <div class="icon">
+                        <a href="#" data-toggle="tooltip" title="Thêm giỏ hàng">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+        </header>
+        <!--banner-menu-->
+        <checkout>
+            <div class="container-flult">
+                <div class="checkout ">
+                    <div class="overlay"></div>
+                    <div class="checkout-text">
+                        <h2 class="text">về koi</h2>
+                        <div class="koi">
+                            <a href="#" class="koibento">koi bento - jabanese restaurant</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </checkout>
+        <!---->
+        </div>
+
+
+        <!--end header-->
+        <!--start menu-->
+        <section>
+            <div class="menu-show">
+                <div class="container">
+                    <div class="all-menu">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">show all</a>
+                            </li>
+                            <li class="nav-item"> <a href="#" class="nav-link">big bento</a></li>
+                            <li class="nav-item"> <a href="#" class="nav-link">mini bento</a></li>
+                            <li class="nav-item"> <a href="#" class="nav-link">shushi</a></li>
+                        </ul>
+                    </div>
+                    <div class="show-all">
+                        <div class="row">
+                            <div class="col-xl-6 col-md-6">
+                                <div class="row child1">
+                                    <div class=" col-xl-7 ">
+                                        <a href="#">
+                                            <img src="img/suon.png" style="margin:50px 0" alt="" width="100%"
+                                                height="auto">
+                                        </a>
+                                    </div>
+                                    <div class="name-food col-xl-5 ">
+                                        <h4>lươn nhật sốt teri</h4>
+                                        <p>1000đ</p>
+                                        <form action="" method="">
+                                            <button type="button">-</button>
+                                            <input type="number" name="number">
+                                            <button type="buton">+</button>
+                                            <button type="submit" class="add-cart">ADD TO CART</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row child1">
+                                    <div class=" col-xl-7 ">
+                                        <a href="#">
+                                            <img src="img/suon.png" style="margin:50px 0" alt="" width="100%"
+                                                height="auto">
+                                        </a>
+                                    </div>
+                                    <div class="name-food col-xl-5 ">
+                                        <h4>lươn nhật sốt teri</h4>
+                                        <p>1000đ</p>
+                                        <form action="" method="">
+                                            <button type="button">-</button>
+                                            <input type="number" name="number">
+                                            <button type="buton">+</button>
+                                            <button type="submit" class="add-cart">ADD TO CART</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row child1">
+                                    <div class=" col-xl-7 ">
+                                        <a href="#">
+                                            <img src="img/suon.png" style="margin:50px 0" alt="" width="100%"
+                                                height="auto">
+                                        </a>
+                                    </div>
+                                    <div class="name-food col-xl-5 ">
+                                        <h4>lươn nhật sốt teri</h4>
+                                        <p>1000đ</p>
+                                        <form action="" method="">
+                                            <button type="button">-</button>
+                                            <input type="number" name="number">
+                                            <button type="buton">+</button>
+                                            <button type="submit" class="add-cart">ADD TO CART</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row child1">
+                                    <div class=" col-xl-7 ">
+                                        <a href="#">
+                                            <img src="img/suon.png" style="margin:50px 0" alt="" width="100%"
+                                                height="auto">
+                                        </a>
+                                    </div>
+                                    <div class="name-food col-xl-5 ">
+                                        <h4>lươn nhật sốt teri</h4>
+                                        <p>(1000đ)</p>
+                                        <form action="" method="">
+                                            <button type="button">-</button>
+                                            <input type="number" name="number">
+                                            <button type="buton">+</button>
+                                            <button type="submit" class="add-cart">ADD TO CART</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row child1">
+                                    <div class=" col-xl-7 ">
+                                        <a href="#">
+                                            <img src="img/suon.png" style="margin:50px 0" alt="" width="100%"
+                                                height="auto">
+                                        </a>
+                                    </div>
+                                    <div class="name-food col-xl-5">
+                                        <h4>lươn nhật sốt teri</h4>
+                                        <p>(1000đ)</p>
+                                        <form action="" method="">
+                                            <button type="button">-</button>
+                                            <input type="number" name="number">
+                                            <button type="buton">+</button>
+                                            <button type="submit" class="add-cart">ADD TO CART</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row child1">
+                                    <div class=" col-xl-7 ">
+                                        <a href="#">
+                                            <img src="img/suon.png" style="margin:50px 0" alt="" width="100%"
+                                                height="auto">
+                                        </a>
+                                    </div>
+                                    <div class="name-food col-xl-5 ">
+                                        <h4>lươn nhật sốt teri</h4>
+                                        <p>1000đ</p>
+                                        <form action="" method="">
+                                            <button type="button">-</button>
+                                            <input type="number" name="number">
+                                            <button type="buton">+</button>
+                                            <button type="submit" class="add-cart">ADD TO CART</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row child1">
+                                    <div class=" col-xl-7 ">
+                                        <a href="#">
+                                            <img src="img/suon.png" style="margin:50px 0" alt="" width="100%"
+                                                height="auto">
+                                        </a>
+                                    </div>
+                                    <div class="name-food col-xl-5 ">
+                                        <h4>lươn nhật sốt teri</h4>
+                                        <p>1000đ</p>
+                                        <form action="" method="">
+                                            <button type="button">-</button>
+                                            <input type="number" name="number">
+                                            <button type="buton">+</button>
+                                            <button type="submit" class="add-cart">ADD TO CART</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-md-6">
+                                <div class="row child1">
+                                    <div class=" col-xl-7 ">
+                                        <a href="#">
+                                            <img src="img/suon.png" style="margin:50px 0" alt="" width="100%"
+                                                height="auto">
+                                        </a>
+                                    </div>
+                                    <div class="name-food col-xl-5">
+                                        <h4>lươn nhật sốt teri</h4>
+                                        <p>(1000đ)</p>
+                                        <form action="" method="">
+                                            <button type="button">-</button>
+                                            <input type="number" name="number">
+                                            <button type="buton">+</button>
+                                            <button type="submit" class="add-cart">ADD TO CART</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row child1">
+                                    <div class=" col-xl-7 ">
+                                        <a href="#">
+                                            <img src="img/suon.png" style="margin:50px 0" alt="" width="100%"
+                                                height="auto">
+                                        </a>
+                                    </div>
+                                    <div class="name-food col-xl-5 ">
+                                        <h4>lươn nhật sốt teri</h4>
+                                        <p>(1000đ)</p>
+                                        <form action="" method="">
+                                            <button type="button">-</button>
+                                            <input type="number" name="number">
+                                            <button type="buton">+</button>
+                                            <button type="submit" class="add-cart">ADD TO CART</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row child1">
+                                    <div class=" col-xl-7 ">
+                                        <a href="#">
+                                            <img src="img/suon.png" style="margin:50px 0" alt="" width="100%"
+                                                height="auto">
+                                        </a>
+                                    </div>
+                                    <div class="name-food col-xl-5 ">
+                                        <h4>lươn nhật sốt teri</h4>
+                                        <p>1000đ</p>
+                                        <form action="" method="">
+                                            <button type="button">-</button>
+                                            <input type="number" name="number">
+                                            <button type="buton">+</button>
+                                            <button type="submit" class="add-cart">ADD TO CART</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row child1">
+                                    <div class=" col-xl-7 ">
+                                        <a href="#">
+                                            <img src="img/suon.png" style="margin:50px 0" alt="" width="100%"
+                                                height="auto">
+                                        </a>
+                                    </div>
+                                    <div class="name-food col-xl-5 ">
+                                        <h4>lươn nhật sốt teri</h4>
+                                        <p>1000đ</p>
+                                        <form action="" method="">
+                                            <button type="button">-</button>
+                                            <input type="number" name="number">
+                                            <button type="buton">+</button>
+                                            <button type="submit" class="add-cart">ADD TO CART</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row child1">
+                                    <div class=" col-xl-7 ">
+                                        <a href="#">
+                                            <img src="img/suon.png" style="margin:50px 0" alt="" width="100%"
+                                                height="auto">
+                                        </a>
+                                    </div>
+                                    <div class="name-food col-xl-5">
+                                        <h4>lươn nhật sốt teri</h4>
+                                        <p>(1000đ)</p>
+                                        <form action="" method="">
+                                            <button type="button">-</button>
+                                            <input type="number" name="number">
+                                            <button type="buton">+</button>
+                                            <button type="submit" class="add-cart">ADD TO CART</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row child1">
+                                    <div class=" col-xl-7 ">
+                                        <a href="#">
+                                            <img src="img/suon.png" style="margin:50px 0" alt="" width="100%"
+                                                height="auto">
+                                        </a>
+                                    </div>
+                                    <div class="name-food col-xl-5 ">
+                                        <h4>lươn nhật sốt teri</h4>
+                                        <p>1000đ</p>
+                                        <form action="" method="">
+                                            <button type="button">-</button>
+                                            <input type="number" name="number">
+                                            <button type="buton">+</button>
+                                            <button type="submit" class="add-cart">ADD TO CART</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row child1">
+                                    <div class=" col-xl-7 ">
+                                        <a href="#">
+                                            <img src="img/suon.png" style="margin:50px 0" alt="" width="100%"
+                                                height="auto">
+                                        </a>
+                                    </div>
+                                    <div class="name-food col-xl-5 ">
+                                        <h4>lươn nhật sốt teri</h4>
+                                        <p>1000đ</p>
+                                        <form action="" method="">
+                                            <button type="button">-</button>
+                                            <input type="number" name="number">
+                                            <button type="buton">+</button>
+                                            <button type="submit" class="add-cart">ADD TO CART</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <!--end menu-->
+        <!--start footer-->
+        <footer>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <h3>About Food Coner</h3>
+                        <p class="text-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque
+                            elit sit amet lorem fermentum.
+                            <span>Nullam turpis ipsum, dapibus eu congue sit amet.</span>
+                        </p>
+                        <h5>Get In Touch</h5>
+                        <div class="menu-footer">
+                            <ul class="nav nav-menu">
+                                <li class="nav-item item"><span class="fab fa-facebook-f link1"></span></li>
+                                <li class="nav-item item"><span class="fab fa-twitter link2"></span></li>
+                                <li class="nav-item item"><span class="fa fa-rss link3"></span></li>
+                                <li class="nav-item item"><span class="fab fa-vk link4"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <h3>Twiter Posts</h3>
+                        <ul>
+                            <li class="text">
+                                Ut aut reiciendis voluptatibus maiores
+                                <a href="#">http://lkj.ewr.com</a>
+                                alias, ut aut reiciendis.
+
+                                <span>
+                                    <i class="fab fa-twitter"></i>
+                                    02 days ago
+                                </span>
+                            </li>
+                            <li class="text">
+                                Itaque earum rerum hic tenetur a sapiente delectus
+                                <a href="#">http://uiubajaj.com</a>
+                                ut aut
+                                voluptatibus.
+                                <span>
+                                    <i class="fab fa-twitter"></i>
+                                    03 days ago
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <h3>Popular Items</h3>
+                        <img src="img/basa.png" style="width:255px" alt=" cá basa" class="img-footer">
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <h3>Newsletter</h3>
+                        <p>Sed pellentesque elit sit amet lorem fermentum, vitae maximus tortor accumsan.</p>
+                        <form action="" method="">
+                            <input type="text" name="email" placeholder="EMAIL" class="form-control input">
+                            <button type="submit" class="btn btn-footer">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer">
+            <p><a href="#">@KOIBENTO</a></p>
+        </div>
+        <!--end footer-->
+    </section>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://use.fontawesome.com/217fbef43b.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+    </script>
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                nav: true,
+
+            },
+            methods: {
+                tienngao: function () {
+                    return "dmm mày ngu như con bò"
+                }
+
+            }
+        })
+    </script>
+
+</body>
+
+</html>
